@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: lightblue;
+        }
+        h1{
+            color: red;
+        }
+        .head{
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 1px solid green;
+            display: inline; */
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            overflow-x: hidden;
+            position: relative;
+        }
+        h1::before{
+            content: "";
+            position: absolute;
+            top:47%;
+            left:45%;
+            width: 10%;
+            border: 1px solid black;
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            top:53%;
+            left:45%;
+            width: 10%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 head">
+                <h1>Technology</h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
